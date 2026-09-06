@@ -37,3 +37,10 @@ dependencies = [
     "unicorn>=2.1.4",
     "uvicorn[standard]>=0.51.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "C18/langgraph_crew_integration",
+    "C20/self_rag",
+    "C20/corrective_rag",
+]

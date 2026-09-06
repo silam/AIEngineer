@@ -1,0 +1,19 @@
+[project]
+name = "langgraph-crew-integration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Si Lam", email = "silam@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=1.2.9",
+]
+
+[project.scripts]
+langgraph-crew-integration = "langgraph_crew_integration:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
