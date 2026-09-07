@@ -43,4 +43,5 @@ members = [
     "C18/langgraph_crew_integration",
     "C20/self_rag",
     "C20/corrective_rag",
+    "C20/graph_rag",
 ]
