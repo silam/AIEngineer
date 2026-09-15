@@ -16,6 +16,7 @@ dependencies = [
     "langchain-classic>=1.0.8",
     "langchain-community>=0.4.2",
     "langchain-core>=1.5.0",
+    "langchain-huggingface>=1.2.2",
     "langchain-openai>=1.4.0",
     "langchain-openrouter>=0.2.6",
     "langchain-text-splitters>=1.1.2",
@@ -30,6 +31,7 @@ dependencies = [
     "pypdf>=6.14.2",
     "python-dotenv>=1.2.2",
     "python-env>=1.0.0",
+    "ragas>=0.4.3",
     "requests>=2.34.2",
     "scikit-learn>=1.9.0",
     "streamlit>=1.60.0",
@@ -44,4 +46,5 @@ members = [
     "C20/self_rag",
     "C20/corrective_rag",
     "C20/graph_rag",
+    "C21",
 ]
