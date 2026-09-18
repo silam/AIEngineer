@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    image: memory-agent
+    ports:
+      - "9000:8500"
+    env_file: .env
+    depends_on:
+      - postgres
+    environment:
+      - DB_URI=postgresql://postgres:password1234@postgres:5432/conversationdb
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password1234
+      POSTGRES_DB: conversationdb
+    ports:
+      - "5432:5432"
